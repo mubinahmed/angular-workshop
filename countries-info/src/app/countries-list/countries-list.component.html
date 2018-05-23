@@ -1,0 +1,17 @@
+
+<h1>{{ title }}</h1>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>ISO Code</th>
+    <th>ISD Code</th>
+    <th>Capital</th>
+  </thead>
+  <tr *ngFor="let country of countries">
+    <td><a href="#" [routerLink] = "['/states', country.isoCode]"> {{country.name}} </a> </td>
+    <td>{{country.isoCode}}</td>
+    <td>{{country.isdCode}}</td>
+    <td>{{country.capital}}</td>
+  </tr>
+</table>
+<tmt-state></tmt-state>

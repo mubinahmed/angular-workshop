@@ -1,0 +1,8 @@
+<section *ngIf="states">
+    <!-- <h1>Selected Country: {{selectedCountry.name}}</h1> -->
+  
+    <div *ngFor="let s of states">
+      <p>{{s.name}}</p>
+    </div>
+    <button (click)="goToMainPage()">Go Back</button>
+  </section>
